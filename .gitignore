@@ -1,0 +1,40 @@
+# --- Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+
+# --- Java ---
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# --- Eclipse / jdtls / Buildship (всё это генерируется при импорте) ---
+.project
+.classpath
+.settings/
+bin/
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+__CREATED_BY_JAVA_LANGUAGE_SERVER__/
+
+# --- Nix / direnv ---
+.direnv/
+result
+result-*
+
+# --- Редакторы ---
+.idea/
+*.iml
+.vscode/
+.zed/*
+!.zed/settings.json
